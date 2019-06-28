@@ -1,0 +1,44 @@
+! <tab> -creates the below snippet
+**********************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      
+</body>
+</html>
+
+
+
+in body element .container <tab> creates the below div & class
+**************************************************************
+
+<div class="container"></div>
+
+
+in div .box*3 <tab> auto creates 3 dicrete divs with class box below
+********************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+Media Queries
+*************
+
+A media query groups together one or more CSS style rules and triggers the activation 
+of those style rules when the viewport or device size reaches a certain size in pixels.
+
+Media queries are always declared using the @media keyword and in our case here using 
+a max width with a value of 767px. We're going to set a background color to blue for 
+any class or any elements that use the mobile class.
+
+We view our boxes and we see that there's no change. That's because the viewport is 
+larger than 767px. If we change this in developer tools - we can see by default there 
+it's collapsed - we can see the blue is visible. That's because the viewport is below 
+767px at that point. And as we increase it beyond 767px we see that that media query 
+is no longer active.
+
+
+So it's useful for mobile design or responsive design - changing your styles depending 
+on the viewport. You can see here using a Galaxy it behaves. If we go to an iPad Pro it
+disappears because you can see here the width of an iPad pro is 1024px. This is much 
+bigger than our setting of 767px.
+
+We can then target our iPad Pros and desktops by using additional media queries. You 
+don't have to do this. It depends on whether you want to have multiple styles on multiple
+device sizes. You could have it as simple as desktop and mobile if you want to.
+
+Here we are targeting any elements that have the tablet class. We're going to set
+the background color to green. Do a refresh, and it's still not visible because it's still 
+outside the range we specified. Okay. iPad is fine because that's within the range of 768px 
+and 991px.
+
+Again, let's emulate the change in size of our viewport again. Once we went to 992px it 
+defaulted. In other words, the media queries aren't activated and the default styles above 
+those media queries are activated. So we had max-width: 767px then we had min-width768px to 
+a max-width: 991px So it's a range. And now we're creating a range between 992px and 1800px 
+- which is generally a large desktop size.
+
+If you want to go beyond that (1800px) don't specify a limiting max-width You can see there, 
+the color black has been triggered based on the view size. And back to a Galaxy, you can see 
+that our mobile color (blue) has been triggered.
+
+
+Let's choose iPad. You see there the tablet media query is being triggered. Let's go to iPad 
+Pro. and we can see there. So that's the basis of responsive design - very clever, very easy 
+to put in place. Once you get familiar with the syntax you can create fantastic designs on 
+different viewports.
